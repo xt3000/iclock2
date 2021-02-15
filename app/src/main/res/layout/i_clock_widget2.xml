@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullWidget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:gravity="center_horizontal|top">
+
+    <RelativeLayout
+        android:id="@+id/rlClock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal|top">
+
+
+        <TextView
+            android:id="@+id/tvWeak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/appwidget_text"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:alpha="0.9"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTemp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="end|top"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/iv_pogoda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:foregroundGravity="center"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_sun_cloudy" />
+
+    </LinearLayout>
+
+</LinearLayout>

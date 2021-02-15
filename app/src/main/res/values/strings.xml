@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">iclock2</string>
+    <string name="appwidget_text">Время</string>
+    <string name="add_widget">Добавить виджет</string>
+</resources>
